@@ -2,7 +2,7 @@ defmodule PT.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
-  @source_url "https://github.com/mcelaney/pattern_toaster"
+  @source_url "https://github.com/PatternToaster/elixir_tools"
 
   def project do
     [
@@ -10,7 +10,7 @@ defmodule PT.Mixfile do
       app: :pattern_toaster,
       build_embedded: Mix.env() == :prod,
       deps: deps(),
-      elixir: "~> 1.5",
+      elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       start_permanent: Mix.env() == :prod,
@@ -40,7 +40,7 @@ defmodule PT.Mixfile do
 
   defp package do
     [
-      maintainers: ["Daniel Neighman", "Sean Callan", "Sonny Scroggin"],
+      maintainers: ["Brian McElaney"],
       licenses: ["MIT"],
       links: %{GitHub: @source_url},
       files: [
